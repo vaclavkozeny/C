@@ -1,0 +1,6 @@
+soubory file1.txt a file2.txt nejsou stejne
+soubory file1.txt a file2.txt jsou stejne
+soubory file1.txt a file2.txt jsou stejne
+soubory file1.txt a file2.txt nejsou stejne
+soubory file1.txt a file2.txt jsou stejne
+soubory file1.txt a file2.txt jsou stejne
