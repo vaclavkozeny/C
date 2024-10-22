@@ -3,4 +3,6 @@ project(cv05 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(cv05 main.c)
+add_executable(cv05 main.c
+        pole.h
+        pole.c)
