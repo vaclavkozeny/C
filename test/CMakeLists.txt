@@ -5,4 +5,8 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(test main.c
         test.h
-        test.c)
+        test.c
+        sachy.h
+        sachy.c
+        gpt.h
+        gpt.c)
