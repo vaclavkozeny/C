@@ -1,5 +1,7 @@
 #include "pismenka.h"
 
+#include <iostream>
+#include <stdexcept>
 string Process_class::process_all() {
     if(!moduls.empty()) {
         for (Modul* m: moduls) {
@@ -10,9 +12,15 @@ string Process_class::process_all() {
 }
 
 Process_class::Process_class(string _in):text(_in) {
-    if(text.length() > 100) {
+    try {
+        if(text.length() > 100) {
+            throw runtime_error("Text too long, cutting to 100 characters");
+        }
+    }catch (runtime_error e) {
+        cout << e.what() << endl;
         text = text.substr(0,100);
     }
+
 }
 
 void Process_class::add_module(Modul *_modul) {
